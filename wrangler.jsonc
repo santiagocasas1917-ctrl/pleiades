@@ -1,1 +1,18 @@
 
+{
+  "name": "techwomenaz-connect",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-01",
+
+  // REQUIRED: the database. Create it once with:
+  //   npx wrangler d1 create twaz
+  // then paste the database_id it prints below. Tables are created automatically.
+  "d1_databases": [{ "binding": "DB", "database_name": "twaz", "database_id": "PASTE_DATABASE_ID_HERE" }],
+
+  // Optional: AI Mentor (Workers AI, no API key needed)
+  "ai": { "binding": "AI" }
+
+  // Optional: organizer sign-up code. Set it as a secret (not in this file):
+  //   npx wrangler secret put ADMIN_CODE
+}
+
